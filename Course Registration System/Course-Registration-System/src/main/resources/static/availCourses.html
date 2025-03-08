@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Available Courses</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script type="text/javascript" src="/js/myscript.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Available Courses</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Course Id</th>
+            <th>Course Name</th>
+            <th>Trainer</th>
+            <th>Duration (months)</th>
+          </tr>
+        </thead>
+        <tbody id="coursetable"></tbody>
+      </table>
+    </div>
+    <script type="text/javascript">
+      window.onload = function () {
+        showCourses();
+      };
+    </script>
+  </body>
+</html>

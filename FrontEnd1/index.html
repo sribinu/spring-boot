@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <h2>Student Details</h2>
+    <button onclick="getStudents()">Show Students</button>
+    <br /><br /><br />
+    <a href="register.html">Register here!</a>
+
+    <script>
+      function getStudents() {
+        fetch("http://localhost:8080/students") // API endpoint
+          .then((response) => response.json()) // JSON conversion
+          .then((data) => console.log(data)); // Logging the data
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Enrollment Success</title>
+    <link rel="stylesheet" href="/css/styles.css"> <!-- Corrected Path -->
+</head>
+<body>
+<div class="container">
+    <h1>Congratulations, <span th:text="${name}"></span>! 🎉</h1>
+    <p>You have successfully enrolled in the <strong th:text="${courseName}"></strong> course.</p>
+    <a href="/" class="btn">Go to Homepage</a> <!-- Corrected Path -->
+</div>
+</body>
+</html>
+
