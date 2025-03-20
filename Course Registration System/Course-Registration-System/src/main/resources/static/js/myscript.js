@@ -1,6 +1,6 @@
 function showCourses() {
   fetch("http://localhost:8080/courses") //API End point
-    .then((response) => response.json())
+    .then((res ponse) => response.json())
     .then((courses) => {
       const dataTable = document.getElementById("coursetable");
 
