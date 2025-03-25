@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form th:action="@{/process-data}" th:object="${data}" method="post">
+    <label for="name">Enter your name:</label>
+    <input type="text" name="name" th:field="*{name}" required><br><br>
+
+    <label for="email">Enter your emailId:</label>
+    <input type="email" name="emailId" th:field="*{email}"  required><br><br>
+
+    <button type="submit" class="btn">Submit</button>
+</form>
+</body>
+</html>
